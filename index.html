@@ -1,942 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f7f2">
     <title>DailyWhisk</title>
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- =====================================================
-         CART BUTTON
-    ====================================================== -->
-
-    <button
-        id="cart-button"
-        class="cart-button"
-        type="button"
-        aria-label="Open cart"
-    >
-        🛒
-        <span id="cart-count">0</span>
+    <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
+        🛒 <span id="cart-count">0</span>
     </button>
 
-
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
     <section class="hero">
-
         <div class="hero-content">
-
-            <p class="hero-small">
-                A LITTLE SOMETHING TO WHISK YOUR DAY
-            </p>
-
-            <h1>
-                DAILYWHISK
-            </h1>
-
-            <p class="hero-subtitle">
-                Matcha • Chocolate • Strawberry • Taro
-            </p>
-
-            <p class="hero-description">
-                Whisked fresh, made for your day.
-            </p>
-
-            <button
-                type="button"
-                class="hero-order-button"
-                onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})"
-            >
-                ORDER NOW
-            </button>
-
-            <p class="by-syamira">
-                By Syamira
-            </p>
-
+            <p class="hero-small">A LITTLE SOMETHING TO WHISK YOUR DAY</p>
+            <h1>DAILYWHISK</h1>
+            <p class="hero-subtitle">Matcha • Chocolate • Strawberry • Taro</p>
+            <p class="hero-description">Whisked fresh, made for your day.</p>
+            <button type="button" class="hero-order-button" onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">ORDER NOW</button>
+            <p class="by-syamira">By Syamira</p>
         </div>
-
     </section>
-
-
-    <!-- =====================================================
-         MENU
-    ====================================================== -->
 
     <section class="menu">
-
         <div class="section-heading">
-
-            <p>
-                WHISKED WITH LOVE
-            </p>
-
-            <h2>
-                OUR MENU
-            </h2>
-
+            <p>WHISKED WITH LOVE</p>
+            <h2>OUR MENU</h2>
         </div>
 
-
-        <!-- =================================================
-             MATCHA SERIES
-        ================================================== -->
-
-        <h2 class="series-title">
-            Matcha Series
-        </h2>
-
+        <h2 class="series-title">Matcha Series</h2>
         <div class="menu-grid">
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/matcha-latte.png"
-                    alt="Matcha Latte"
-                >
-
-                <h3>
-                    Matcha Latte
-                </h3>
-
-                <p class="price">
-                    RM8.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/strawberry-matcha.png"
-                    alt="Matcha Strawberry"
-                >
-
-                <h3>
-                    Matcha Strawberry
-                </h3>
-
-                <p class="price">
-                    RM9.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/taro-matcha.png"
-                    alt="Matcha Taro Latte"
-                >
-
-                <h3>
-                    Matcha Taro Latte
-                </h3>
-
-                <p class="price">
-                    RM9.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
+            <div class="drink-card"><img src="Images/matcha-latte.png" alt="Matcha Latte"><h3>Matcha Latte</h3><p class="price">RM8.00</p><button type="button">ADD TO CART</button></div>
+            <div class="drink-card"><img src="Images/strawberry-matcha.png" alt="Matcha Strawberry"><h3>Matcha Strawberry</h3><p class="price">RM9.00</p><button type="button">ADD TO CART</button></div>
+            <div class="drink-card"><img src="Images/taro-matcha.png" alt="Matcha Taro Latte"><h3>Matcha Taro Latte</h3><p class="price">RM9.00</p><button type="button">ADD TO CART</button></div>
         </div>
 
-
-        <!-- =================================================
-             CHOCOLATE SERIES
-        ================================================== -->
-
-        <h2 class="series-title">
-            Chocolate Series
-        </h2>
-
+        <h2 class="series-title">Chocolate Series</h2>
         <div class="menu-grid">
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/chocolate-latte.png"
-                    alt="Chocolate Latte"
-                >
-
-                <h3>
-                    Chocolate Latte
-                </h3>
-
-                <p class="price">
-                    RM7.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
+            <div class="drink-card"><img src="Images/chocolate-latte.png" alt="Chocolate Latte"><h3>Chocolate Latte</h3><p class="price">RM7.00</p><button type="button">ADD TO CART</button></div>
         </div>
 
-
-        <!-- =================================================
-             STRAWBERRY SERIES
-        ================================================== -->
-
-        <h2 class="series-title">
-            Strawberry Series
-        </h2>
-
+        <h2 class="series-title">Strawberry Series</h2>
         <div class="menu-grid">
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/strawberry-latte.png"
-                    alt="Strawberry Latte"
-                >
-
-                <h3>
-                    Strawberry Latte
-                </h3>
-
-                <p class="price">
-                    RM7.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/strawberry-chocolate.png"
-                    alt="Strawberry Chocolate"
-                >
-
-                <h3>
-                    Strawberry Chocolate
-                </h3>
-
-                <p class="price">
-                    RM8.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
+            <div class="drink-card"><img src="Images/strawberry-latte.png" alt="Strawberry Latte"><h3>Strawberry Latte</h3><p class="price">RM7.00</p><button type="button">ADD TO CART</button></div>
+            <div class="drink-card"><img src="Images/strawberry-chocolate.png" alt="Strawberry Chocolate"><h3>Strawberry Chocolate</h3><p class="price">RM8.00</p><button type="button">ADD TO CART</button></div>
         </div>
 
-
-        <!-- =================================================
-             TARO SERIES
-        ================================================== -->
-
-        <h2 class="series-title">
-            Taro Series
-        </h2>
-
+        <h2 class="series-title">Taro Series</h2>
         <div class="menu-grid">
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/taro-latte.png"
-                    alt="Taro Latte"
-                >
-
-                <h3>
-                    Taro Latte
-                </h3>
-
-                <p class="price">
-                    RM7.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
-
-            <div class="drink-card">
-
-                <img
-                    src="Images/not-available.png"
-                    alt="Taro Cream Latte"
-                >
-
-                <h3>
-                    Taro Cream Latte
-                </h3>
-
-                <p class="price">
-                    RM9.00
-                </p>
-
-                <button type="button">
-                    ADD TO CART
-                </button>
-
-            </div>
-
+            <div class="drink-card"><img src="Images/taro-latte.png" alt="Taro Latte"><h3>Taro Latte</h3><p class="price">RM7.00</p><button type="button">ADD TO CART</button></div>
+            <div class="drink-card"><img src="Images/not-available.png" alt="Taro Cream Latte"><h3>Taro Cream Latte</h3><p class="price">RM9.00</p><button type="button">ADD TO CART</button></div>
         </div>
-
     </section>
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
 
     <footer class="footer">
-
-        <h2>
-            DAILYWHISK
-        </h2>
-
-        <p>
-            Whisked fresh, made for your day.
-        </p>
-
+        <h2>DAILYWHISK</h2>
+        <p>Whisked fresh, made for your day.</p>
         <div class="social-links">
-
-            <a
-                href="https://www.instagram.com/dailywhisk.my?igsh=MWVnZjV5dW9kNzU2Zw%3D%3D&utm_source=qr"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Instagram
-            </a>
-
-            <a
-                href="https://www.tiktok.com/@dailywhisk.my?_r=1&_t=ZS-98q59yYsXvJ"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                TikTok
-            </a>
-
+            <a href="https://www.instagram.com/dailywhisk.my?igsh=MWVnZjV5dW9kNzU2Zw%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@dailywhisk.my?_r=1&amp;_t=ZS-98q59yYsXvJ" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
-
-        <p class="footer-credit">
-            © DailyWhisk • By Syamira
-        </p>
-
+        <p class="footer-credit">© DailyWhisk • By Syamira</p>
     </footer>
 
-
-    <!-- =====================================================
-         CART
-    ====================================================== -->
-
-    <section
-        class="cart"
-        aria-label="Shopping cart"
-    >
-
-        <div class="cart-header">
-
-            <h2>
-                YOUR CART
-            </h2>
-
-            <button
-                id="close-cart"
-                type="button"
-                aria-label="Close cart"
-            >
-                ✕
-            </button>
-
-        </div>
-
-
-        <div id="cart-items">
-
-            <p>
-                Your cart is empty.
-            </p>
-
-        </div>
-
-
+    <section class="cart" aria-label="Shopping cart">
+        <div class="cart-header"><h2>YOUR CART</h2><button id="close-cart" type="button" aria-label="Close cart">✕</button></div>
+        <div id="cart-items"><p>Your cart is empty.</p></div>
         <div class="cart-summary">
-
-            <div class="cart-total-row">
-
-                <span>
-                    Subtotal
-                </span>
-
-                <strong>
-                    RM<span id="cart-total">0.00</span>
-                </strong>
-
-            </div>
-
-            <button
-                id="checkout-button"
-                type="button"
-            >
-                CHECKOUT
-            </button>
-
+            <div class="cart-total-row"><span>Subtotal</span><strong>RM<span id="cart-total">0.00</span></strong></div>
+            <button id="checkout-button" type="button">CHECKOUT</button>
         </div>
-
     </section>
-
-
-    <!-- =====================================================
-         CHECKOUT
-    ====================================================== -->
 
     <section class="checkout">
-
-        <div class="checkout-header">
-
-            <div>
-
-                <p class="checkout-small">
-                    ALMOST THERE
-                </p>
-
-                <h2>
-                    YOUR ORDER
-                </h2>
-
-            </div>
-
-            <button
-                id="close-checkout"
-                type="button"
-                aria-label="Close checkout"
-            >
-                ✕
-            </button>
-
-        </div>
-
-
+        <div class="checkout-header"><div><p class="checkout-small">ALMOST THERE</p><h2>YOUR ORDER</h2></div><button id="close-checkout" type="button" aria-label="Close checkout">✕</button></div>
         <form id="checkout-form">
+            <label for="customer-name">Name</label>
+            <input type="text" id="customer-name" placeholder="Your name" required>
+            <label for="customer-phone">Phone Number</label>
+            <input type="tel" id="customer-phone" placeholder="01X-XXXXXXX" required>
 
-            <!-- CUSTOMER -->
-
-            <label for="customer-name">
-                Name
-            </label>
-
-            <input
-                type="text"
-                id="customer-name"
-                placeholder="Your name"
-                required
-            >
-
-
-            <label for="customer-phone">
-                Phone Number
-            </label>
-
-            <input
-                type="tel"
-                id="customer-phone"
-                placeholder="01X-XXXXXXX"
-                required
-            >
-
-
-            <!-- ORDER TYPE -->
-
-            <label>
-                Order Type
-            </label>
-
+            <label>Order Type</label>
             <div class="order-type">
-
-                <label>
-
-                    <input
-                        type="radio"
-                        name="order-type"
-                        value="pickup"
-                        checked
-                    >
-
-                    <span>
-                        🛍️ Pickup
-                    </span>
-
-                </label>
-
-
-                <label>
-
-                    <input
-                        type="radio"
-                        name="order-type"
-                        value="delivery"
-                    >
-
-                    <span>
-                        🚚 Delivery
-                    </span>
-
-                </label>
-
+                <label><input type="radio" name="order-type" value="pickup" checked><span>🛍️ Pickup</span></label>
+                <label><input type="radio" name="order-type" value="delivery"><span>🚚 Delivery</span></label>
             </div>
 
-
-            <!-- DELIVERY -->
-
-            <div
-                id="delivery-section"
-                class="delivery-section"
-            >
-
-                <label for="delivery-area">
-                    Delivery Area
-                </label>
-
-                <select id="delivery-area">
-
-                    <option value="">
-                        Select your area
-                    </option>
-
-                </select>
-
-                <p
-                    id="delivery-fee-message"
-                    class="delivery-fee-message"
-                >
-                    Please select your delivery area.
-                </p>
-
+            <div id="pickup-location" class="pickup-location is-visible">
+                <strong>Pickup location</strong><br>Kingfisher 9C-56
             </div>
 
+            <div id="delivery-section" class="delivery-section">
+                <label for="delivery-area">Delivery Area</label>
+                <select id="delivery-area"><option value="">Select your area</option></select>
+                <p id="delivery-fee-message" class="delivery-fee-message">Please select your delivery area.</p>
+            </div>
 
-            <!-- ADDRESS -->
-
-            <label
-                for="customer-address"
-                id="address-label"
-            >
-                Delivery Address
-            </label>
-
-            <textarea
-                id="customer-address"
-                placeholder="Enter your full address"
-                rows="4"
-            ></textarea>
-
-
-            <!-- NOTES -->
-
-            <label for="customer-notes">
-                Notes
-            </label>
-
-            <textarea
-                id="customer-notes"
-                placeholder="Any special request?"
-                rows="3"
-            ></textarea>
-
-
-            <!-- =================================================
-                 PROMO
-            ================================================== -->
+            <label for="customer-address" id="address-label">Delivery Address</label>
+            <textarea id="customer-address" placeholder="Enter your full address" rows="4"></textarea>
+            <label for="customer-notes">Notes</label>
+            <textarea id="customer-notes" placeholder="Any special request?" rows="3"></textarea>
 
             <div class="promo-section">
-
-                <label for="promo-code">
-                    Promo Code
-                </label>
-
-                <div class="promo-input-row">
-
-                    <input
-                        type="text"
-                        id="promo-code"
-                        placeholder="Enter promo code"
-                        autocomplete="off"
-                    >
-
-                    <button
-                        type="button"
-                        id="apply-promo-button"
-                    >
-                        APPLY
-                    </button>
-
-                </div>
-
-                <p
-                    id="promo-message"
-                    class="promo-message"
-                ></p>
-
+                <label for="promo-code">Promo Code</label>
+                <div class="promo-input-row"><input type="text" id="promo-code" placeholder="Enter promo code" autocomplete="off"><button type="button" id="apply-promo-button">APPLY</button></div>
+                <p id="promo-message" class="promo-message"></p>
             </div>
 
-
-            <!-- PAYMENT -->
-
-            <label>
-                Payment Method
-            </label>
-
+            <label>Payment Method</label>
             <div class="payment-options">
-
-                <label class="payment-option">
-
-                    <input
-                        type="radio"
-                        name="payment-method"
-                        value="qr"
-                        checked
-                    >
-
-                    <span>
-                        📱 QR Payment
-                    </span>
-
-                </label>
-
-
-                <label class="payment-option">
-
-                    <input
-                        type="radio"
-                        name="payment-method"
-                        value="cash"
-                    >
-
-                    <span>
-                        💵 Cash
-                    </span>
-
-                </label>
-
+                <label class="payment-option"><input type="radio" name="payment-method" value="qr" checked><span>📱 QR Payment</span></label>
+                <label class="payment-option"><input type="radio" name="payment-method" value="cash"><span>💵 Cash</span></label>
             </div>
 
-
-            <!-- QR PAYMENT -->
-
-            <div
-                class="qr-payment"
-                id="qr-payment"
-            >
-
-                <h3>
-                    Scan to Pay
-                </h3>
-
-                <img
-                    src="Images/payment-qr.jfif"
-                    alt="DailyWhisk QR Payment"
-                >
-
-                <p>
-                    Please scan the QR code to make payment.
-                </p>
-
+            <div class="qr-payment" id="qr-payment">
+                <h3>Scan to Pay</h3>
+                <img src="Images/payment-qr.png" alt="DailyWhisk QR Payment">
+                <p>Please scan the QR code to make payment.</p>
             </div>
 
-
-            <!-- PAYMENT PROOF -->
-
-            <div
-                class="payment-proof"
-                id="payment-proof"
-            >
-
-                <label for="payment-screenshot">
-                    Payment Proof
-                </label>
-
-                <p class="payment-proof-text">
-                    Please upload a screenshot of your payment.
-                </p>
-
-                <input
-                    type="file"
-                    id="payment-screenshot"
-                    accept="image/png, image/jpeg, image/jpg, image/webp"
-                >
-
-                <small>
-                    Accepted: JPG, JPEG, PNG or WEBP
-                </small>
-
+            <div class="payment-proof" id="payment-proof">
+                <label for="payment-screenshot">Payment Proof</label>
+                <p class="payment-proof-text">Please upload a screenshot of your payment.</p>
+                <input type="file" id="payment-screenshot" accept="image/png, image/jpeg, image/jpg, image/webp">
+                <small>Accepted: JPG, JPEG, PNG or WEBP</small>
             </div>
-
-
-            <!-- PRICE SUMMARY -->
 
             <div class="checkout-price-summary">
-
-                <div class="price-row">
-
-                    <span>
-                        Drinks Subtotal
-                    </span>
-
-                    <strong>
-                        RM<span id="checkout-subtotal">0.00</span>
-                    </strong>
-
-                </div>
-
-
-                <div
-                    class="price-row discount-row"
-                    id="discount-row"
-                >
-
-                    <span>
-                        Discount
-                    </span>
-
-                    <strong>
-                        -RM<span id="checkout-discount">0.00</span>
-                    </strong>
-
-                </div>
-
-
-                <div class="price-row">
-
-                    <span>
-                        Delivery Fee
-                    </span>
-
-                    <strong>
-                        RM<span id="checkout-delivery-fee">0.00</span>
-                    </strong>
-
-                </div>
-
-
-                <div class="checkout-total">
-
-                    <span>
-                        Total
-                    </span>
-
-                    <strong>
-                        RM<span id="checkout-total">0.00</span>
-                    </strong>
-
-                </div>
-
+                <div class="price-row"><span>Drinks Subtotal</span><strong>RM<span id="checkout-subtotal">0.00</span></strong></div>
+                <div class="price-row discount-row" id="discount-row"><span>Discount</span><strong>-RM<span id="checkout-discount">0.00</span></strong></div>
+                <div class="price-row"><span>Delivery Fee</span><strong>RM<span id="checkout-delivery-fee">0.00</span></strong></div>
+                <div class="checkout-total"><span>Total</span><strong>RM<span id="checkout-total">0.00</span></strong></div>
             </div>
-
-
-            <!-- PLACE ORDER -->
-
-            <button
-                type="submit"
-                id="place-order-button"
-            >
-                PLACE ORDER
-            </button>
-
+            <button type="submit" id="place-order-button">PLACE ORDER</button>
         </form>
-
     </section>
 
-
-    <!-- =====================================================
-         ORDER CONFIRMATION
-    ====================================================== -->
-
-    <section
-        class="confirmation"
-        id="confirmation"
-    >
-
+    <section class="confirmation" id="confirmation">
         <div class="confirmation-box">
-
-            <button
-                id="close-confirmation"
-                type="button"
-                aria-label="Close confirmation"
-            >
-                ✕
-            </button>
-
-
-            <div class="confirmation-icon">
-                ✓
-            </div>
-
-
-            <p class="confirmation-small">
-                THANK YOU
-            </p>
-
-
-            <h2>
-                ORDER RECEIVED!
-            </h2>
-
-
-            <p id="confirmation-message">
-                Thank you for your order!
-            </p>
-
-
+            <button id="close-confirmation" type="button" aria-label="Close confirmation">✕</button>
+            <div class="confirmation-icon">✓</div>
+            <p class="confirmation-small">THANK YOU</p>
+            <h2>ORDER RECEIVED!</h2>
+            <p id="confirmation-message">Thank you for your order!</p>
             <div class="confirmation-details">
-
-                <p>
-
-                    <strong>
-                        Order Type:
-                    </strong>
-
-                    <span id="confirmation-type">
-                    </span>
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Delivery Area:
-                    </strong>
-
-                    <span id="confirmation-area">
-                    </span>
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Payment:
-                    </strong>
-
-                    <span id="confirmation-payment">
-                    </span>
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Payment Proof:
-                    </strong>
-
-                    <span id="confirmation-proof">
-                    </span>
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Promo:
-                    </strong>
-
-                    <span id="confirmation-promo">
-                        None
-                    </span>
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Discount:
-                    </strong>
-
-                    <span class="confirmation-money">
-                        RM<span id="confirmation-discount">0.00</span>
-                    </span>
-
-                </p>
-
-
-                <p class="confirmation-total-row">
-
-                    <strong>
-                        Total:
-                    </strong>
-
-                    <span class="confirmation-money">
-                        RM<span id="confirmation-total">0.00</span>
-                    </span>
-
-                </p>
-
+                <p><strong>Order Type:</strong><span id="confirmation-type"></span></p>
+                <p><strong>Delivery Area:</strong><span id="confirmation-area"></span></p>
+                <p><strong>Payment:</strong><span id="confirmation-payment"></span></p>
+                <p><strong>Payment Proof:</strong><span id="confirmation-proof"></span></p>
+                <p><strong>Promo:</strong><span id="confirmation-promo">None</span></p>
+                <p><strong>Discount:</strong><span class="confirmation-money">RM<span id="confirmation-discount">0.00</span></span></p>
+                <p class="confirmation-total-row"><strong>Total:</strong><span class="confirmation-money">RM<span id="confirmation-total">0.00</span></span></p>
             </div>
-
-
-            <p class="confirmation-thanks">
-                Thank you for choosing DailyWhisk.
-                <br>
-                We truly appreciate your order. ♡
-            </p>
-
-
-            <button
-                id="back-to-menu"
-                type="button"
-            >
-                BACK TO MENU
-            </button>
-
+            <p class="confirmation-thanks">Thank you for choosing DailyWhisk.<br>We truly appreciate your order. ♡</p>
+            <button id="back-to-menu" type="button">BACK TO MENU</button>
         </div>
-
     </section>
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
 
     <script src="script.js"></script>
-
 </body>
 </html>
